@@ -26,8 +26,6 @@ Additional transformations were performed using Power Query and DAX, including:
 - Creating KPI measures for the dashboard
 
 ## Dashboard
-![Nashville Housing Dashboard](dashboard-preview.png)
-
 The dashboard includes:
 
 - Total Properties Sold
