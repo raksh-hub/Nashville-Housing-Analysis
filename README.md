@@ -1,60 +1,48 @@
 # Nashville Housing Analysis Dashboard
 
-A Power BI dashboard analyzing Nashville housing sales data to explore trends in property sales, pricing, property characteristics, and locations.
+A data analysis project using **MySQL and Power BI** to analyze Nashville housing sales, pricing, property characteristics, and locations.
 
 ![Nashville Housing Dashboard](dashboard-preview.png)
 
-## Overview
+## Data Cleaning & Preparation
 
-This project uses the Nashville Housing dataset to create an interactive dashboard covering:
+The raw Nashville Housing dataset was cleaned using **MySQL**, including:
 
-- Property sales trends
-- Sales price distribution
-- Property characteristics
-- Land use and acreage
-- City-level sales activity
+- Converting and formatting sale dates
+- Standardizing inconsistent values
+- Handling missing property addresses
+- Cleaning and converting sale prices
+- Splitting property and owner addresses
+- Removing duplicate records
+- Removing unnecessary columns
 
-## Data Preparation
-
-The dataset was cleaned and prepared for analysis before being imported into Power BI.
-
-Additional transformations were performed using Power Query and DAX, including:
-
-- Creating calculated columns and measures
-- Creating sales price and acreage brackets
-- Preparing fields for visualization and filtering
-- Creating KPI measures for the dashboard
+The cleaned data was then imported into **Power BI**, where **Power Query and DAX** were used to create calculated fields, sales price and acreage brackets, and KPI measures.
 
 ## Dashboard
-The dashboard includes:
 
-- Total Properties Sold
-- Total Sales Value
-- Average Sale Price
-- Sales Value by Year
-- Monthly Sales Volume
-- Sales by Price Bracket
-- Average Sale Price by Bedrooms
-- Average Sale Price by Land Use
-- Properties Sold as Vacant
-- Sales by Acreage
-- Sale Price vs. Acreage
-- City-level Sales Analysis
+The dashboard analyzes:
 
-Interactive **Year**, **City**, and **Sale Price Bracket** slicers allow users to explore the data.
+- Total properties sold and total sales value
+- Sales trends by year and month
+- Sales price brackets
+- Average sale price by bedrooms and land use
+- Sales by acreage
+- Sale price vs. acreage
+- City-level sales activity
+
+Interactive **Year, City, and Sale Price Bracket** slicers allow users to explore the data.
 
 ## Key Insights
 
-- Over **56K properties** are included in the dataset.
+- **56K+ properties** are included in the dataset.
 - Total recorded sales are approximately **$18.46 billion**.
-- The **$100K–$500K** price range contains the majority of recorded sales.
-- Average sale prices vary across property types and cities.
-- Most properties are relatively small, with the majority falling below **2 acres**.
-- Larger properties generally tend to have higher sale prices, although there is considerable variation between individual properties.
+- Most sales fall within the **$100K–$500K** price range.
+- Sale prices vary across property types and cities.
+- Most properties are under **2 acres**.
 
 ## Tools
 
-**Power BI | Power Query | DAX | SQL**
+**MySQL | Power BI | Power Query | DAX**
 
 ## Dataset
 
